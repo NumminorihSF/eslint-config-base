@@ -5,17 +5,15 @@ extends:
 plugins:
   - prettier
   - eslint-comments
-  - compat
 
 env:
   es6: true
-  node: true
   browser: true
 
 rules:
   prettier/prettier:
     - error
-    - printWidth: 80
+    - printWidth: 100
       tabWidth: 2
       semi: true
       trailingComma: all
@@ -47,5 +45,3 @@ rules:
   eslint-comments/no-unlimited-disable: error
   eslint-comments/no-unused-disable: warn
   eslint-comments/no-unused-enable: warn
-
-  compat/compat: error
