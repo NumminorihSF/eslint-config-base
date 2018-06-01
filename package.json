@@ -1,6 +1,6 @@
 {
   "name": "@saritasa/eslint-config-base",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Saritasa's shareable base config for eslint",
   "main": "index.js",
   "scripts": {
