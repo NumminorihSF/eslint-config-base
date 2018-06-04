@@ -1,3 +1,6 @@
+### 0.1.1
+Add rule to require jsdoc.
+
 ### 0.1.0
 Add jsdoc linting into config.
 
