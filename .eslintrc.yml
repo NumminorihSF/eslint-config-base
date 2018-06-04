@@ -5,6 +5,7 @@ extends:
 plugins:
   - prettier
   - eslint-comments
+  - jsdoc
 
 env:
   es6: true
@@ -20,6 +21,32 @@ rules:
       bracketSpacing: true
       jsxBracketSameLine: false
       singleQuote: true
+
+  valid-jsdoc: [
+    error,
+    {
+      prefer: {
+        arg: param,
+        argument: param,
+        class: constructor,
+        return: returns,
+        virtual: abstract,
+        augment: extends,
+        memberOf: memberof
+      },
+      preferType: {
+        Boolean: boolean,
+        Number: number,
+        object: Object,
+        String: string,
+        undefined: void,
+        Symbol: symbol
+      },
+      requireReturn: false,
+      requireReturnType: true,
+      matchDescription: ".+"
+    }
+  ]
 
   no-plusplus: off
   func-names: off
@@ -47,3 +74,14 @@ rules:
   eslint-comments/no-unlimited-disable: error
   eslint-comments/no-unused-disable: warn
   eslint-comments/no-unused-enable: warn
+
+  jsdoc/check-tag-names: error
+  jsdoc/check-types: error
+  jsdoc/newline-after-description: error
+  jsdoc/require-description-complete-sentence: error
+  jsdoc/require-param-description: error
+  jsdoc/require-param-name: error
+  jsdoc/require-param-type: error
+  jsdoc/require-returns-description: error
+  jsdoc/require-returns-type: error
+

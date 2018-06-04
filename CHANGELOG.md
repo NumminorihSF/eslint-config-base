@@ -1,3 +1,6 @@
+### 0.1.0
+Add jsdoc linting into config.
+
 ### 0.0.4
 Turn off required default exports. Use named exports for projects.
 
