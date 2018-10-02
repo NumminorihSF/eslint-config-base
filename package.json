@@ -26,6 +26,6 @@
   },
   "dependencies": {
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^2.9.0"
+    "eslint-config-prettier": "^3.1.0"
   }
 }
